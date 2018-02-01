@@ -2,8 +2,7 @@ version: '2'
 
 services:
   proxy:
-    image: custom-drupal
-    build: .
+    image: drupal
     ports:
       - '8080:80' # expose 80 on host and sent to 8080 in container
     volumes:
@@ -17,7 +16,7 @@ services:
       - POSTGRES_PASSWORD=mypasswd
     volumes:
       - drupal-data:/var/lib/postgresql/data
-      
+
   volumes:
     drupal-data:
     drupal-modules:

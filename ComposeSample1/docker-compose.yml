@@ -14,8 +14,8 @@ services:
     image: postgres:9.6
     environment:
       - POSTGRES_PASSWORD=mypasswd
-    volumes:
-      - drupal-data:/var/lib/postgresql/data
+    #volumes:
+      #- drupal-data:/var/lib/postgresql/data
 
   #volumes:
     #drupal-data:

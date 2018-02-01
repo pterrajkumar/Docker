@@ -5,11 +5,11 @@ services:
     image: drupal
     ports:
       - '8080:80' # expose 80 on host and sent to 8080 in container
-    volumes:
-      - drupal-modules:/var/www/html/modules
-      - drupal-profiles:/var/www/html/profiles
-      - drupal-sites:/var/www/html/sites
-      - drupal-themes:/var/www/html/themes
+    # volumes:
+      # - drupal-modules:/var/www/html/modules
+      # - drupal-profiles:/var/www/html/profiles
+      # - drupal-sites:/var/www/html/sites
+      # - drupal-themes:/var/www/html/themes
   postgres:
     image: postgres:9.6
     environment:
@@ -19,7 +19,7 @@ services:
 
   volumes:
     drupal-data:
-    drupal-modules:
-    drupal-profiles:
-    drupal-sites:
-    drupal-themes:
+    #drupal-modules:
+    #drupal-profiles:
+    #drupal-sites:
+    #drupal-themes:

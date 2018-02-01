@@ -17,6 +17,7 @@ services:
       - POSTGRES_PASSWORD=mypasswd
     volumes:
       - drupal-data:/var/lib/postgresql/data
+      
   volumes:
     drupal-data:
     drupal-modules:
